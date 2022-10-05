@@ -10,7 +10,8 @@
     "start": "node server.js",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --configuration \"production\""
+    "postinstall": "ng build --aot --configuration \"production\"",
+    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
   },
   "private": true,
   "dependencies": {
