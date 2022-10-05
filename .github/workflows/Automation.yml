@@ -27,10 +27,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: Angular-App-2/package-lock.json
+        #cache-dependency-path: Angular-App-2/package-lock.json
     - name: install and build
-      working-directory: ./Angular-App-2
+      #working-directory: ./Angular-App-2
       run: npm install && npm run build
     - name: Run the Tests
-      working-directory: ./Angular-App-2
+      #working-directory: ./Angular-App-2
       run: npm run test:prod
